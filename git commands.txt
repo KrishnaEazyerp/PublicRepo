@@ -1,0 +1,251 @@
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/MyReopsitory (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Admin/OneDrive/Desktop/GitHub/MyReopsitory/.git/
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/MyReopsitory (master)
+$ git clone "git@github.com:KrishnaEazyerp/MyRepository.git"
+Cloning into 'MyRepository'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/MyReopsitory (master)
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Admin/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Admin/.ssh/id_rsa
+Your public key has been saved in /c/Users/Admin/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:fp7NXDJnKQOBzMa74iygK1QOVCm+k2LdPCEr7K9ZIhQ Admin@DESKTOP-97T717S
+The key's randomart image is:
++---[RSA 3072]----+
+|  ...            |
+| o .   + .       |
+|oE.     * .      |
+| o.o . . . .     |
+|..B = . S .      |
+|oO.+ + . . .   . |
+|*ooo  o o . = =  |
+|+.+ .o . o = O   |
+|o+o. .o   o +    |
++----[SHA256]-----+
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/MyReopsitory (master)
+$ ssh -T git@github.org
+
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/MyReopsitory (master)
+$ git clone "git@github.com:KrishnaEazyerp/MyRepository.git"
+Cloning into 'MyRepository'...
+
+
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/MyReopsitory (master)
+$
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/MyRepository (master)
+$ git pull
+From github.com:KrishnaEazyerp/MyRepository
+ * [new branch]      develop    -> origin/develop
+Already up to date.
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/MyRepository (master)
+$ git branch -a
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/develop
+  remotes/origin/master
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/MyRepository (master)
+$ git checkout develop
+Switched to a new branch 'develop'
+branch 'develop' set up to track 'origin/develop'.
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/MyRepository (develop)
+$ git pull
+Already up to date.
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/MyRepository (develop)
+$ git add -A
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/MyRepository (develop)
+$ git status
+On branch develop
+Your branch is up to date with 'origin/develop'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Text1.txt
+
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/MyRepository (develop)
+$ git commit -a -m "first file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Admin@DESKTOP-97T717S.(none)')
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/MyRepository (develop)
+$ ssh -T git@github.com
+Hi KrishnaEazyerp! You've successfully authenticated, but GitHub does not provide shell access.
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/MyRepository (develop)
+$ git commit -a -m "first file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Admin@DESKTOP-97T717S.(none)')
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/MyRepository (develop)
+$ git commit -a -m "first file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Admin@DESKTOP-97T717S.(none)')
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/MyRepository (develop)
+$
+--------------------public repo--------------------------
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/PublicRepo (master)
+$ git pull origin main
+From github.com:KrishnaEazyerp/PublicRepo
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+Already up to date.
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/PublicRepo (master)
+$ git checkout main
+Switched to a new branch 'main'
+branch 'main' set up to track 'origin/main'.
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/PublicRepo (main)
+$ git branch develop
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/PublicRepo (main)
+$ git checkout develop
+Switched to branch 'develop'
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/PublicRepo (develop)
+$ git pull origin develop
+fatal: couldn't find remote ref develop
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/PublicRepo (develop)
+$ git pull develop
+fatal: 'develop' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/PublicRepo (develop)
+$ git pull origin develop
+From github.com:KrishnaEazyerp/PublicRepo
+ * branch            develop    -> FETCH_HEAD
+ * [new branch]      develop    -> origin/develop
+Already up to date.
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/PublicRepo (develop)
+$ git status
+On branch develop
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        text1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/PublicRepo (develop)
+$ git add -A
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/PublicRepo (develop)
+$ git status
+On branch develop
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   text1.txt
+
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/PublicRepo (develop)
+$ git commit -a -m "first file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Admin@DESKTOP-97T717S.(none)')
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/PublicRepo (develop)
+$ git config --global user.email "happylifekrish11@gmail.com"
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/PublicRepo (develop)
+$ git confi --global user.name "Krishna"
+git: 'confi' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/PublicRepo (develop)
+$ git config --global user.name "Krishna"
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/PublicRepo (develop)
+$ git commit -a -m "added"
+[develop ca7c693] added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text1.txt
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/PublicRepo (develop)
+$ git push origin develop
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 287 bytes | 287.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:KrishnaEazyerp/PublicRepo.git
+   a5f3048..ca7c693  develop -> develop
+
+Admin@DESKTOP-97T717S MINGW64 ~/OneDrive/Desktop/GitHub/PublicRepo (develop)
+$
